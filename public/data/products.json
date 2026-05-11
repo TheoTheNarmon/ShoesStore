@@ -1,0 +1,170 @@
+[
+  {
+    "id": 1,
+    "name": "Classic Clog",
+    "brand": "Crocs",
+    "image": "https://woker.vtexassets.com/arquivos/ids/637381-800-800?v=638971617440770000&width=800&height=800&aspect=true",
+    "price": 54999
+  },
+  {
+    "id": 2,
+    "name": "Zapatillas Campus 00s",
+    "brand": "Adidas",
+    "image": "https://mateuarg.vtexassets.com/arquivos/ids/608310-800-auto?v=638958022023270000&width=800&height=auto&aspect=true",
+    "price": 179999
+  },
+  {
+    "id": 3,
+    "name": "Nike Winflo 11",
+    "brand": "Nike",
+    "image": "https://nikearprod.vtexassets.com/arquivos/ids/995236-600-600?v=638556540208870000&width=600&height=600&aspect=true",
+    "price": 160999
+  },
+  {
+    "id": 3,
+    "name": "Nike Mercurial Vapor 16",
+    "brand": "Nike",
+    "image": "https://nikearprod.vtexassets.com/arquivos/ids/1328528-600-600?v=638726473562200000&width=600&height=600&aspect=true",
+    "price": 99999
+  },
+  {
+    "id": 4,
+    "name": "Samba OG",
+    "brand": "adidas",
+    "image": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/3bb35ad97ad74dfda6fbab6c00f9518d_9366/Samba_OG_Shoes_White_B75806_01_standard.jpg",
+    "price": 185999
+  },
+  {
+    "id": 5,
+    "name": "Gazelle Indoor",
+    "brand": "Adidas",
+    "image": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/25139049a60e4896a75a96f131a40398_9366/Gazelle_Indoor_Shoes_Blue_H06260_01_standard.jpg",
+    "price": 192500
+  },
+  {
+    "id": 6,
+    "name": "Ultraboost Light",
+    "brand": "Adidas",
+    "image": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/0f04e0e4708740179979af34008170c7_9366/Ultraboost_Light_Shoes_Black_GZ5159_01_standard.jpg",
+    "price": 315000
+  },
+  {
+    "id": 7,
+    "name": "Superstar Classic",
+    "brand": "Adidas",
+    "image": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/af6a3187299a473da87daf5b0068863f_9366/Superstar_Shoes_White_IF3624_01_standard.jpg",
+    "price": 168900
+  },
+  {
+    "id": 8,
+    "name": "Forum Low CL",
+    "brand": "Adidas",
+    "image": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/254425f1873142758117ae8300808a32_9366/Forum_Low_CL_Shoes_White_HQ1494_01_standard.jpg",
+    "price": 175000
+  },
+  {
+    "id": 9,
+    "name": "NMD_R1 V3",
+    "brand": "Adidas",
+    "image": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/71e4433177694931a774aed101340156_9366/NMD_R1_V3_Shoes_Black_HP4316_01_standard.jpg",
+    "price": 210000
+  },
+  {
+    "id": 10,
+    "name": "Stan Smith",
+    "brand": "Adidas",
+    "image": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/683236ca96834f8a8462ab9e00ec6a83_9366/Stan_Smith_Shoes_White_M20324_01_standard.jpg",
+    "price": 159999
+  },
+  {
+    "id": 11,
+    "name": "Response Runner",
+    "brand": "Adidas",
+    "image": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/6ec34d2847c24a689b14af2400938b81_9366/Response_Runner_Shoes_Blue_ID7335_01_standard.jpg",
+    "price": 95000
+  },
+  {
+    "id": 12,
+    "name": "Campus 00s",
+    "brand": "Adidas",
+    "image": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/81a96752f9b244d59f7caf79001ea896_9366/Campus_00s_Shoes_Grey_HQ8707_01_standard.jpg",
+    "price": 189000
+  },
+  {
+    "id": 13,
+    "name": "Adistar 2.0",
+    "brand": "Adidas",
+    "image": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/75f3a09770e04743b177af1401037549_9366/Adistar_2.0_Shoes_Grey_HP2354_01_standard.jpg",
+    "price": 245000
+  },
+  {
+    "id": 14,
+    "name": "Classic Clog",
+    "brand": "Crocs",
+    "image": "https://images.crocs.com/is/image/Crocs/10001_4SS_ALT100?wid=600&hei=600&fmt=jpeg&qlt=85",
+    "price": 75000
+  },
+  {
+    "id": 15,
+    "name": "Bayaband Clog",
+    "brand": "Crocs",
+    "image": "https://images.crocs.com/is/image/Crocs/205089_066_ALT100?wid=600&hei=600&fmt=jpeg&qlt=85",
+    "price": 82000
+  },
+  {
+    "id": 16,
+    "name": "LiteRide 360 Pacer",
+    "brand": "Crocs",
+    "image": "https://images.crocs.com/is/image/Crocs/206705_02G_ALT100?wid=600&hei=600&fmt=jpeg&qlt=85",
+    "price": 115000
+  },
+  {
+    "id": 17,
+    "name": "Echo Clog",
+    "brand": "Crocs",
+    "image": "https://images.crocs.com/is/image/Crocs/207937_2Y2_ALT100?wid=600&hei=600&fmt=jpeg&qlt=85",
+    "price": 125900
+  },
+  {
+    "id": 18,
+    "name": "Classic Hiker Clog",
+    "brand": "Crocs",
+    "image": "https://images.crocs.com/is/image/Crocs/206772_1FT_ALT100?wid=600&hei=600&fmt=jpeg&qlt=85",
+    "price": 110000
+  },
+  {
+    "id": 19,
+    "name": "Baya Clog",
+    "brand": "Crocs",
+    "image": "https://images.crocs.com/is/image/Crocs/10126_410_ALT100?wid=600&hei=600&fmt=jpeg&qlt=85",
+    "price": 69900
+  },
+  {
+    "id": 20,
+    "name": "Classic All-Terrain Clog",
+    "brand": "Crocs",
+    "price": 98000,
+    "image": "https://images.crocs.com/is/image/Crocs/206340_260_ALT100?wid=600&hei=600&fmt=jpeg&qlt=85"
+  },
+  {
+    "id": 21,
+    "name": "Crocband Clog",
+    "brand": "Crocs",
+    "image": "https://images.crocs.com/is/image/Crocs/11016_100_ALT100?wid=600&hei=600&fmt=jpeg&qlt=85",
+    "price": 85000
+  },
+  {
+    "id": 22,
+    "name": "Classic Crush Clog",
+    "brand": "Crocs",
+    "image": "https://images.crocs.com/is/image/Crocs/207521_001_ALT100?wid=600&hei=600&fmt=jpeg&qlt=85",
+    "price": 105000
+  },
+  {
+    "id": 23,
+    "name": "Mellow Recovery Clog",
+    "brand": "Crocs",
+    "image": "https://images.crocs.com/is/image/Crocs/208392_160_ALT100?wid=600&hei=600&fmt=jpeg&qlt=85",
+    "price": 118500
+  }
+]

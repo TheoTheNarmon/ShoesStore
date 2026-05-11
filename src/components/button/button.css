@@ -1,0 +1,16 @@
+.button{
+    display: flex;
+    width: 50%;
+    height: 50px;
+    background-color: var(--background-footer);
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+    color: darkgray;
+}
+
+.button:hover{
+    background-color: var(--background-header);
+    color: gray;
+}

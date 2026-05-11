@@ -1,0 +1,18 @@
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+
+    /* design */
+    width: 100%;
+    height: 100px;
+    padding: 0%;
+    margin: 0%;
+    background-color: var(--background-header);
+    border-bottom: 2px solid black;
+    text-align: center;
+}
+
+.title {
+    color: #260729;
+}
