@@ -27,10 +27,11 @@ function App(){
       <Route element={<Layout/>}>
         <Route path="/" element={<Menu products={products}/>} />
         <Route path="/product/:id" element={<Product products={products} />}/>
-        <Route path="/cart" element={<Cart/>}/>
+        <Route path="/cart" element={<Cart items={products.filter(item => item.id % 2 === 0)}/>}/>
       </Route>
     </Routes>
   )
 }
+/*ya en el futuro tendré un carrito decente, por ahora solo recibe los pares*/
 
 export default App

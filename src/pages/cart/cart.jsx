@@ -1,8 +1,13 @@
+import CartItem from "../../components/cartItem/cartItem"
+import './cart.css'
 
-
-function Cart(){
+function Cart({items}){
     return(
-        <h1>Bienvenido al carrito</h1>
+        <div className="cart-container">
+            {items.map(item => (
+                <CartItem key={item.id} item={item}/>
+            ))}
+        </div>
     )
 }
 
