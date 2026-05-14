@@ -26,6 +26,7 @@ function App(){
     <Routes>
       <Route element={<Layout/>}>
         <Route path="/" element={<Menu products={products}/>} />
+        <Route path="/shop" element={<Menu products={products}/>} />
         <Route path="/product/:id" element={<Product products={products} />}/>
         <Route path="/cart" element={<Cart items={products.filter(item => item.id % 2 === 0)}/>}/>
       </Route>

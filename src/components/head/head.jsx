@@ -1,9 +1,18 @@
+import { Link } from 'react-router-dom'
 import './head.css'
 
 function Head(){
     return(
         <div className='header'>
-            <h1 className='title'>Bienvenido</h1>
+            <Link to='/shop' className='header-link-container'>
+                <h2 >tienda</h2>
+            </Link>
+            <Link to='/' className='header-link-container'>
+                <h2 >Página principal</h2>
+            </Link>
+            <Link to='/cart' className='header-link-container'>
+                <h2 >Carrito</h2>
+            </Link>  
         </div>
     )
 }

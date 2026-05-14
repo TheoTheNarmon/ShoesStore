@@ -2,6 +2,7 @@
     position: fixed;
     top: 0;
     z-index: 1000;
+    display: flex;
 
     /* design */
     width: 100%;
@@ -11,8 +12,15 @@
     background-color: var(--background-header);
     border-bottom: 2px solid black;
     text-align: center;
+
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 }
 
-.title {
-    color: #260729;
+.header-link-container{
+    width: 20rem;
+    height: 100%;
+    border: 2px solid black;
 }
