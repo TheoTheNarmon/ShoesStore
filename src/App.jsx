@@ -4,6 +4,7 @@ import Menu from './pages/menu/menu'
 //import ItemsContainer from "./components/itemsContainer/itemsContainer";
 import Product from './pages/product/product'
 import Cart from './pages/cart/cart'
+import MainPage from "./pages/main/main";
 import { useEffect, useState } from "react";
 
 function App(){
@@ -25,7 +26,7 @@ function App(){
   return (
     <Routes>
       <Route element={<Layout/>}>
-        <Route path="/" element={<Menu products={products}/>} />
+        <Route path="/" element={<MainPage />} />
         <Route path="/shop" element={<Menu products={products}/>} />
         <Route path="/product/:id" element={<Product products={products} />}/>
         <Route path="/cart" element={<Cart items={products.filter(item => item.id % 2 === 0)}/>}/>
