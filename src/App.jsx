@@ -5,23 +5,27 @@ import Menu from './pages/menu/menu'
 import Product from './pages/product/product'
 import Cart from './pages/cart/cart'
 import MainPage from "./pages/main/main";
+import FormContainer from "./pages/shoeFrom/shoeForm";
 import { useEffect, useState } from "react";
+import { getFirestore, collection, getDocs } from 'firebase/firestore';
+import { db } from './firebase/config';
+import Management from "./components/management/management";
 
 function App(){
 
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch('/data/products.json')
-      .then(answer => answer.json())
-      .then(datos => {
-        setProducts(datos);
-        console.log('¡Productos cargados!', datos);
-      })
-      .catch(error => {
-        console.error('error detectado:', error);
-      });
-  }, [])
+    const productsDB = collection(db, "Shoes")
+
+    getDocs(productsDB).then((resp) => {
+      setProducts(
+        resp.docs.map((doc) => {
+          return{...doc.data(), id: doc.id}
+        })
+      );
+    })
+  }, []);
 
   return (
     <Routes>
@@ -29,11 +33,12 @@ function App(){
         <Route path="/" element={<MainPage />} />
         <Route path="/shop" element={<Menu products={products}/>} />
         <Route path="/product/:id" element={<Product products={products} />}/>
-        <Route path="/cart" element={<Cart items={products.filter(item => item.id % 2 === 0)}/>}/>
+        <Route path="/cart" element={<Cart/>}/>
+        <Route path="/add" element={<FormContainer/>}/>
+        <Route path="/management" element={<Management/>}/>
       </Route>
     </Routes>
   )
 }
-/*ya en el futuro tendré un carrito decente, por ahora solo recibe los pares*/
 
 export default App
