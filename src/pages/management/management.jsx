@@ -74,6 +74,11 @@ const Management = () => {
     const handleSubmit = async (event) => {
         event.preventDefault();
         let urlImage = dataForm.image;
+
+        /*if(dataForm.name == "" || dataForm.brand == "" || dataForm.price <= 0){
+            alert("uno de los datos está incompleto");
+            return;
+        }*/
     
         if(!imageFile && !toEdit){
             alert("ingrese una imagen")
