@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
+import './login.css'
 
 const Login = () => {
     const [email, setEmail] = useState("");
@@ -25,23 +26,25 @@ const Login = () => {
         });
     }
     return(
-        <div>
+        <div className="login-page">
             <h2>Iniciar sesión</h2>
-            <form onSubmit={handleLogin}>
+            <form className="login-form" onSubmit={handleLogin}>
                 <input
+                    className="login-input"
                     type="email"
                     placeholder="Correo electrónico"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}/>
                 <input
+                    className="login-input"
                     type="password"
                     placeholder="Contraseña"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}/>
-                <button type="submit">Ingresar</button>
+                <button className="login-button" type="submit">Ingresar</button>
             </form>
 
-            <p>¿No tenés una cuenta? <Link to="/register">Registrate aquí</Link></p>
+            <p className="login-text">¿No tenés una cuenta? <Link to="/register">Registrate aquí</Link></p>
         </div>
     )
 }

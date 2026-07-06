@@ -3,11 +3,13 @@
   --text-h: #232226;
   --bg: #fff;
   --border: #000000;
-  --background: #495168;
-  --background-header: #2a2344;
-  --background-footer: #260729;
-  --background-one: #d8ccb2;
+  --background: #E6E0F7;
+  --background-header: #4A3E7F;
+  --background-button: #A67EF0;
+  --background-one: #E6D9B6;
   --background-two: #ccbd9e;
+  --background-green: #60d152;
+  --background-red: #d15256;
   --shadow:
     rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
 

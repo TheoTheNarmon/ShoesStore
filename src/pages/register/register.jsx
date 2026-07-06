@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth';
+import '../login/login.css'
 
 const Register = () => {
     const [email, setEmail] = useState('');
@@ -32,31 +33,32 @@ const Register = () => {
     };
 
     return (
-        <div>
+        <div className="login-page">
             <h2>Crea una cuenta</h2>
-            <form onSubmit={handleSubmit}>
+            <form className="login-form" onSubmit={handleSubmit}>
                 <div>
-                    <label>Correo electrónico</label>
                     <input
+                        className="login-input"
                         type='email'
+                        placeholder="Correo electrónico"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         required
                     />
                 </div>
                 <div>
-                    <label>Contraseña</label>
                     <input
+                        className="login-input"
                         type='password'
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
                         required
                         minLength={6}
-                        placeholder='Mínimo 6 carácteres'
+                        placeholder='Contraseña'
                     />
                 </div>
                 {error && <p className="error-message">{error}</p>}
-                <button type="submit">Registrarse</button>
+                <button className="login-button" type="submit">Registrarse</button>
             </form>
         </div>
     )

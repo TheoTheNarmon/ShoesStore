@@ -2,6 +2,60 @@
     display: flex;
     flex-direction: column;
 
-    justify-items: center;
-    align-items: center;
+    padding: 2rem, 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
 }
+
+.checkout-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 90%;
+  max-width: 500px;
+
+  margin-top: auto;
+  margin-bottom: 2rem;
+}
+
+.total-price-text{
+    font-size: 2rem;
+    font-weight: 800;
+    color: #000000;
+    margin: 0;
+}
+
+.cart-button-actions{
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.75rem;
+    width: 160px;
+}
+
+.button-confirm-buy{
+    background-color: var(--background-green);
+    color: #000000;
+    border: 2px solid #000000;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    text-align: center;
+}
+
+.button-trash-cart{
+    background-color: var(--background-red);
+    color: #000000;
+    border: 2px solid #000000;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    text-align: center;
+}
+
+.button-confirm-buy:hover { filter: brightness(0.9); }
+.button-trash-cart { filter: brightness(0.9); }

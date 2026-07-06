@@ -16,14 +16,19 @@ function Cart(){
     }
 
     return(
-        <div>
-            <div className="cart-container">
+        <div className="cart-container">
+            <div>
                 {cart.map(item => (
-                    <CartItem key={item.id} item={item}/>
+                    <CartItem key={item.id} item={item} />
                 ))}
             </div>
-            <h3>Total a pagar: ${getCartTotal()}</h3>
-            <button onClick={clearCart}>Vaciar Carrito</button>
+            <div className="checkout-section">
+                <h2 className="total-price-text">Total a pagar: ${getCartTotal()}</h2>
+                <div className="cart-button-actions">
+                    <button className="button-confirm-buy">Comprar</button>
+                    <button onClick={clearCart} className="button-trash-cart">Vaciar Carrito</button>
+                </div>
+            </div>
         </div>
     )
 }
