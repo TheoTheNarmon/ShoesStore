@@ -1,0 +1,26 @@
+.search-container {
+  width: 90%;
+  max-width: 500px;
+  margin: 1.5rem auto;
+  display: flex;
+  justify-content: center;
+}
+
+.shop-search {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 2px solid #000000;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  color: black;
+  outline: none;
+  transition: box-shadow 0.2s ease;
+}
+
+.tittle-shop {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
