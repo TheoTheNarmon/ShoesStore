@@ -8,7 +8,7 @@ function Button({link, text}){
         to={link}
         className="button"
         >
-            <p>{text}</p>
+            <h3>{text}</h3>
         </Link>
     )
 }

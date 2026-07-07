@@ -8,7 +8,7 @@ function MainPage(){
     return(
         <div className="main-page">
             <h1>Bienvenido</h1>
-            <button className="main-button" onClick={() => navigate('/shop')}>Empieza a comprar</button>
+            <Button link={'/shop'} text={'Empieza a comprar'}></Button>
         </div>
     )
 }

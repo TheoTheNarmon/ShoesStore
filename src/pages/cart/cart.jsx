@@ -8,7 +8,7 @@ function Cart(){
 
     if (cart.length === 0) {
         return (
-            <div>
+            <div className="no-cart-container">
             <h1>El carrito está vacío</h1>
             <Button link='/' text='Agrega productos para continuar la compra.'/>
             </div>

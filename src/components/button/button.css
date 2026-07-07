@@ -1,16 +1,18 @@
-.button{
+.button {
     display: flex;
-    width: 50%;
-    height: 50px;
-    background-color: var(--background-footer);
     align-items: center;
-    align-content: center;
-    justify-items: center;
     justify-content: center;
-    color: darkgray;
-}
+    
+    background-color: var(--background-button);
 
-.button:hover{
-    background-color: var(--background-header);
-    color: gray;
+    color: #000000;
+    border: 1px solid #000000;
+    border-radius: 50px;
+
+    height: 100px;
+    width: 50%;
+
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: xx-large;
 }
