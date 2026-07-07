@@ -74,11 +74,6 @@ const Management = () => {
     const handleSubmit = async (event) => {
         event.preventDefault();
         let urlImage = dataForm.image;
-
-        /*if(dataForm.name == "" || dataForm.brand == "" || dataForm.price <= 0){
-            alert("uno de los datos está incompleto");
-            return;
-        }*/
     
         if(!imageFile && !toEdit){
             alert("ingrese una imagen")
@@ -86,7 +81,7 @@ const Management = () => {
         }
 
         if(imageFile){
-            const apiKey = '9411a76634b52789345a7b0c0f934a51';
+            const apiKey = import.meta.env.VITE_IMGBB_API_KEY;
             const formData = new FormData();
             formData.append('image', imageFile);
         
