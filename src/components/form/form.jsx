@@ -6,11 +6,11 @@ export function FormProd({dataForm, handleChange, handleSubmit, handleImageChang
             <h3>Añade tu producto</h3>
             <div>
                 <label>Nombre: </label>
-                <input type='text' required minLength={10} placeholder="Nombre del producto" name="name" value={dataForm.name} onChange={handleChange}></input>
+                <input type='text' required minLength={4} placeholder="Nombre del producto" name="name" value={dataForm.name} onChange={handleChange}></input>
             </div>
             <div>
                 <label>Marca: </label>
-                <input type='text' required minLength={10} placeholder="Marca del producto" name="brand" value={dataForm.brand} onChange={handleChange}></input>
+                <input type='text' required minLength={4} placeholder="Marca del producto" name="brand" value={dataForm.brand} onChange={handleChange}></input>
             </div>
             <div>
                 <label>precio: </label>

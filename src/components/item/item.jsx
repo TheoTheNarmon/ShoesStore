@@ -16,6 +16,7 @@ function Item({item}){
 
     return(
         <div to={'/product/' + item.id} className='shop-item'>
+            <h3>{item.brand}</h3>
             <h2>{item.name}</h2>
             <div className='image-container'>
                 <img className='image' src={item.image}/>
