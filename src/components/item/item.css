@@ -6,7 +6,8 @@
     border: 2px solid;
     border-radius: 30px;
     padding: 1.5rem;
-    width: 100%;
+    width: 90%;
+    max-width: 500px;
     box-sizing: border-box;
 
     background-color: var(--background-one);
