@@ -1,11 +1,35 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Item from '../../components/item/item'
 import ItemsContainer from '../../components/itemsContainer/itemsContainer'
 import './menu.css'
+import { getFirestore, collection, getDocs, doc, getDoc } from 'firebase/firestore'; 
+import { db } from '../../firebase/config';
 
-function Menu({products}) {
+function Menu() {
   const [search, setSearch] = useState('');
+  const [products, setProducts] = useState([]);
   const [items, setItems] = useState(products);
+  const [loading, setLoading] = useState(true);
+
+
+  useEffect(() => {
+    setLoading(true);
+    const productsDB = collection(db, "Shoes");
+
+    getDocs(productsDB)
+      .then((resp) => {
+        const productList = resp.docs.map((doc) => {
+          return { ...doc.data(), id: doc.id };
+        });
+        
+        setProducts(productList);
+        setItems(productList);
+      })
+      .catch((error) => console.error("Error cargando productos:", error))
+      .finally(() => {
+        setLoading(false);
+      });
+    }, []);
 
   const handleSetSearch = (e) => {
     setSearch(e.target.value);
@@ -26,6 +50,10 @@ function Menu({products}) {
       return (nameLower.includes(searchLower));
     }))
   }
+
+  if (loading){
+        return(<h1>Cargando...</h1>)
+    }
 
   return (
     <div>

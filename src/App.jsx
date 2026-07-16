@@ -14,26 +14,12 @@ import ProtectedRoute from "./components/protectedRoute/protectedRoute";
 
 function App(){
 
-  const [products, setProducts] = useState([]);
-
-  useEffect(() => {
-    const productsDB = collection(db, "Shoes")
-
-    getDocs(productsDB).then((resp) => {
-      setProducts(
-        resp.docs.map((doc) => {
-          return{...doc.data(), id: doc.id}
-        })
-      );
-    })
-  }, []);
-
   return (
     <Routes>
       <Route element={<Layout/>}>
         <Route path="/" element={<MainPage />} />
-        <Route path="/shop" element={<Menu products={products}/>} />
-        <Route path="/product/:id" element={<Product products={products} />}/>
+        <Route path="/shop" element={<Menu />} />
+        <Route path="/product/:id" element={<Product />}/>
         <Route path="/cart" element={<Cart/>}/>
         <Route path="/login" element={<Login/>}/>
         <Route path="/register" element={<Register/>} />
